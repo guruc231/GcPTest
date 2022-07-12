@@ -1,0 +1,7 @@
+E:\CodeHome\InterviewTests\PetroineousTest_HYadav\Petroineous.Service.Windows\bin\Debug\Petroineous.exe.config
+E:\CodeHome\InterviewTests\PetroineousTest_HYadav\Petroineous.Service.Windows\bin\Debug\Petroineous.exe
+E:\CodeHome\InterviewTests\PetroineousTest_HYadav\Petroineous.Service.Windows\bin\Debug\Petroineous.pdb
+E:\CodeHome\InterviewTests\PetroineousTest_HYadav\Petroineous.Service.Windows\obj\Debug\Petroineous.Service.csproj.CoreCompileInputs.cache
+E:\CodeHome\InterviewTests\PetroineousTest_HYadav\Petroineous.Service.Windows\obj\Debug\Petroineous.exe
+E:\CodeHome\InterviewTests\PetroineousTest_HYadav\Petroineous.Service.Windows\obj\Debug\Petroineous.pdb
+E:\CodeHome\InterviewTests\PetroineousTest_HYadav\Petroineous.Service.Windows\obj\Debug\Petroineous.Service.csproj.AssemblyReference.cache

@@ -1,0 +1,241 @@
+2022-07-11 08:53:10.417 +01:00 [ERR] Event logging is non-functional
+2022-07-11 08:53:10.646 +01:00 [INF] OnStart invoked
+2022-07-11 08:53:10.648 +01:00 [INF] Starting: Extracts Orchestration service
+2022-07-11 08:53:10.702 +01:00 [INF] Starting: Extract run for extract type = IntradayPowerPosition. Local time = 11/07/2022 00:00:00
+2022-07-11 08:53:10.705 +01:00 [INF] Starting: Power intraday position extract at 11/07/2022 00:00:00
+2022-07-11 08:53:10.712 +01:00 [INF] Getting power trades from external Power Service
+2022-07-11 08:53:11.251 +01:00 [INF] Aggregating power trade volume calculation
+2022-07-11 08:53:11.271 +01:00 [INF] Starting Power Position extract file generation
+2022-07-11 08:53:11.273 +01:00 [INF] Power position extract generation completed successfully. 1 file generated = .\PowerPosition_20220711_1200.csv
+2022-07-11 08:53:11.273 +01:00 [INF] Completed: Power intraday position extract at 11/07/2022 08:53:11
+2022-07-11 08:53:11.274 +01:00 [INF] Started: Extracts Orchestration service
+2022-07-11 08:53:11.275 +01:00 [INF] Successfully started extracts orchestrator
+2022-07-11 08:53:11.275 +01:00 [INF] OnStart complted
+2022-07-11 08:54:10.719 +01:00 [INF] Starting: Extract run for extract type = IntradayPowerPosition. Local time = 01/01/0001 00:00:00
+2022-07-11 08:54:10.722 +01:00 [INF] Starting: Power intraday position extract at 01/01/0001 00:00:00
+2022-07-11 08:54:10.726 +01:00 [INF] Getting power trades from external Power Service
+2022-07-11 08:54:14.797 +01:00 [ERR] Error in GetIntradayPowerPositions.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+2022-07-11 08:54:14.825 +01:00 [ERR] Error in extract run in RunPowerGenerationIntradayExtract.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 54
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.ExtractsOrchestrationService.<RunPowerGenerationIntradayExtract>d__14.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\ExtractsOrchestrationService.cs:line 140
+2022-07-11 08:55:10.750 +01:00 [INF] Starting: Extract run for extract type = IntradayPowerPosition. Local time = 01/01/0001 00:00:00
+2022-07-11 08:55:10.751 +01:00 [INF] Starting: Power intraday position extract at 01/01/0001 00:00:00
+2022-07-11 08:55:10.753 +01:00 [INF] Getting power trades from external Power Service
+2022-07-11 08:55:10.766 +01:00 [ERR] Error in GetIntradayPowerPositions.    at Services.PowerService.CheckThrowError()
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+2022-07-11 08:55:10.789 +01:00 [ERR] Error in extract run in RunPowerGenerationIntradayExtract.    at Services.PowerService.CheckThrowError()
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 54
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.ExtractsOrchestrationService.<RunPowerGenerationIntradayExtract>d__14.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\ExtractsOrchestrationService.cs:line 140
+2022-07-11 08:56:10.741 +01:00 [INF] Starting: Extract run for extract type = IntradayPowerPosition. Local time = 01/01/0001 00:00:00
+2022-07-11 08:56:10.742 +01:00 [INF] Starting: Power intraday position extract at 01/01/0001 00:00:00
+2022-07-11 08:56:10.743 +01:00 [INF] Getting power trades from external Power Service
+2022-07-11 08:56:10.820 +01:00 [ERR] Error in GetIntradayPowerPositions.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+2022-07-11 08:56:10.849 +01:00 [ERR] Error in extract run in RunPowerGenerationIntradayExtract.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 54
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.ExtractsOrchestrationService.<RunPowerGenerationIntradayExtract>d__14.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\ExtractsOrchestrationService.cs:line 140
+2022-07-11 08:57:10.749 +01:00 [INF] Starting: Extract run for extract type = IntradayPowerPosition. Local time = 01/01/0001 00:00:00
+2022-07-11 08:57:10.750 +01:00 [INF] Starting: Power intraday position extract at 01/01/0001 00:00:00
+2022-07-11 08:57:10.752 +01:00 [INF] Getting power trades from external Power Service
+2022-07-11 08:57:15.081 +01:00 [ERR] Error in GetIntradayPowerPositions.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+2022-07-11 08:57:15.110 +01:00 [ERR] Error in extract run in RunPowerGenerationIntradayExtract.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 54
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.ExtractsOrchestrationService.<RunPowerGenerationIntradayExtract>d__14.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\ExtractsOrchestrationService.cs:line 140
+2022-07-11 08:58:10.823 +01:00 [INF] Starting: Extract run for extract type = IntradayPowerPosition. Local time = 01/01/0001 00:00:00
+2022-07-11 08:58:10.824 +01:00 [INF] Starting: Power intraday position extract at 01/01/0001 00:00:00
+2022-07-11 08:58:10.824 +01:00 [INF] Getting power trades from external Power Service
+2022-07-11 08:58:11.992 +01:00 [ERR] Error in GetIntradayPowerPositions.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+2022-07-11 08:58:12.019 +01:00 [ERR] Error in extract run in RunPowerGenerationIntradayExtract.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 54
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.ExtractsOrchestrationService.<RunPowerGenerationIntradayExtract>d__14.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\ExtractsOrchestrationService.cs:line 140
+2022-07-11 08:59:10.786 +01:00 [INF] Starting: Extract run for extract type = IntradayPowerPosition. Local time = 01/01/0001 00:00:00
+2022-07-11 08:59:10.790 +01:00 [INF] Starting: Power intraday position extract at 01/01/0001 00:00:00
+2022-07-11 08:59:10.791 +01:00 [INF] Getting power trades from external Power Service
+2022-07-11 08:59:13.069 +01:00 [ERR] Error in GetIntradayPowerPositions.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+2022-07-11 08:59:13.093 +01:00 [ERR] Error in extract run in RunPowerGenerationIntradayExtract.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 54
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.ExtractsOrchestrationService.<RunPowerGenerationIntradayExtract>d__14.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\ExtractsOrchestrationService.cs:line 140
+2022-07-11 09:00:10.794 +01:00 [INF] Starting: Extract run for extract type = IntradayPowerPosition. Local time = 01/01/0001 00:00:00
+2022-07-11 09:00:10.798 +01:00 [INF] Starting: Power intraday position extract at 01/01/0001 00:00:00
+2022-07-11 09:00:10.800 +01:00 [INF] Getting power trades from external Power Service
+2022-07-11 09:00:13.673 +01:00 [ERR] Error in GetIntradayPowerPositions.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+2022-07-11 09:00:13.710 +01:00 [ERR] Error in extract run in RunPowerGenerationIntradayExtract.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 54
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.ExtractsOrchestrationService.<RunPowerGenerationIntradayExtract>d__14.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\ExtractsOrchestrationService.cs:line 140
+2022-07-11 09:01:10.814 +01:00 [INF] Starting: Extract run for extract type = IntradayPowerPosition. Local time = 01/01/0001 00:00:00
+2022-07-11 09:01:10.817 +01:00 [INF] Starting: Power intraday position extract at 01/01/0001 00:00:00
+2022-07-11 09:01:10.818 +01:00 [INF] Getting power trades from external Power Service
+2022-07-11 09:01:12.266 +01:00 [ERR] Error in GetIntradayPowerPositions.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+2022-07-11 09:01:12.306 +01:00 [ERR] Error in extract run in RunPowerGenerationIntradayExtract.    at System.DateTime.AddTicks(Int64 value)
+   at System.DateTime.Add(Double value, Int32 scale)
+   at Services.PowerService.GetTradesImpl(DateTime date)
+   at Services.PowerService.<GetTradesAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Petroineous.Service.Core.PositionDataService.<GetIntradayPowerPositions>d__3.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\PositionDataService.cs:line 54
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Petroineous.Service.Core.ExtractsOrchestrationService.<RunPowerGenerationIntradayExtract>d__14.MoveNext() in C:\Users\DataGlide\Documents\Temp\GCPetroineousTest\Petroineous.Service.Core\Service\ExtractsOrchestrationService.cs:line 140
